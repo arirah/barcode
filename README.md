@@ -1,16 +1,10 @@
-[![Latest Stable Version](https://poser.pugx.org/dinesh/barcode/v/stable.png)](https://packagist.org/packages/dinesh/barcode)
-[![Total Downloads](https://poser.pugx.org/dinesh/barcode/downloads.png)](https://packagist.org/packages/dinesh/barcode)
-[![Build Status](https://travis-ci.org/dineshrabara/barcode.png?branch=master)](https://travis-ci.org/dineshrabara/barcode)
-
-[Read More Wiki](https://github.com/dineshrabara/barcode/wiki)
-
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `dinesh/barcode`.
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `intricateweb/barcode`.
 
     "require": {
 		"laravel/framework": "4.0.*",
-		"dinesh/barcode": "dev-master"
+		"intricateweb/barcode": "dev-master"
 	}
 
 Next, update Composer from the Terminal:
@@ -19,21 +13,21 @@ Next, update Composer from the Terminal:
 
 Once this operation completes, the final step is to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
 
-    'Dinesh\Barcode\BarcodeServiceProvider'
+    'intricateweb\Barcode\BarcodeServiceProvider'
 
 If you want to change Bar-code's settings (Store Path etc.), you need to publish its config file(s).
 
-    Run php artisan config:publish dinesh/barcode 
+    Run php artisan config:publish intricateweb/barcode 
 
 Now add the alias.
 ```php
 'aliases' => array(
-	'DNS1D' => 'Dinesh\Barcode\Facades\DNS1DFacade',
-        'DNS2D' => 'Dinesh\Barcode\Facades\DNS2DFacade',
+	'DNS1D' => 'intricateweb\Barcode\Facades\DNS1DFacade',
+        'DNS2D' => 'intricateweb\Barcode\Facades\DNS2DFacade',
 )
 ```
 
-from the command line and you should find the files in app/config/packages/dinesh/barcode.
+from the command line and you should find the files in app/config/packages/intricateweb/barcode.
 
 
 Bar-code generator like 
